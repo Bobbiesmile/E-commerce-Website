@@ -1,0 +1,135 @@
+html{
+   min-height: 100%;
+}   
+body{
+        margin: 0;
+        font-family: sans-serif;        
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        /*filter: blur(23px);*/  
+    }
+
+nav{
+    background: linear-gradient(90deg,	#0f1213, rgb(189, 87, 4) );
+ top:0;
+ width:100%;
+}
+a{
+    text-decoration: none;
+}
+
+#logoDiv, #menuDiv{
+    display: inline-block;
+}
+
+#logoDiv img{
+width: 65px;
+margin-top: 4px;
+margin-left: 4px;
+
+}
+
+#menuDiv{
+    width: 80%;
+    margin-top: 0px;
+    position: absolute;
+
+}
+ul{
+float: right;
+}
+
+#menuDiv ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px;
+    color: #eee;
+   }
+   #menuDiv ul li:hover{ 
+       background-color: rgba(219, 158, 108, 0.459);
+       border-radius: 6px;  
+       color:#252525;
+       height:10px;
+       transition-duration:.7s;
+   }
+
+
+  
+
+  .main_container{
+    /* background-color: #eee;   */
+    width: 80%;
+    margin: 0 auto;
+    /*filter: blur(12px);*/
+  }
+
+.main_container div{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+  .left_container{
+      /* background-color: green; */
+  }
+  .middle_container{
+      /* background-color: #fff; */
+  }
+
+  .right_container{
+      /* background-color: green; */
+  }
+
+
+footer{
+    background-color: #181212;
+    color: #fff;
+    text-align: center;
+    padding: 45px;
+    margin-top: auto;
+    transition: 1.7s;
+    /* clip-path: circle(180vh at 50% -100vh)!important; */
+}
+#mobile_menu_icon{
+display: none;
+}
+
+
+
+/* This area of code enables proper mobile view */
+@media(max-width: 700px){
+#mobile_menu_icon{
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+margin-right: 12px;
+color: #eee;
+font-size: 36px;
+}
+  #menuDiv{
+    margin-top: -18px;
+      right: 0;
+      width: 200px;
+      display: none;
+}
+     #menuDiv ul li{
+      display: block;
+      background-color: #252525;
+      text-align: center; 
+      height:70px;     
+     }
+
+    .main_container{
+        width: 98%;
+        margin-bottom: 94px;
+    }
+
+    .main_container div{
+        width: 100%;
+        /* display: block; */
+        margin-top: 22px;
+
+    }
+}
